@@ -17,6 +17,7 @@ public class HomePage_Action {
 	public void acceptCookie() {
 		homepagelocator.cookieAcceptButton.click();
 	}
+	//added testing comment
 	 public void internationalCloseIcon()  {  
 		 homepagelocator.internationalCloseIcon.click();
 	 }
