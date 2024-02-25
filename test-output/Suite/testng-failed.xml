@@ -5,14 +5,14 @@
   <parameter name="URL" value="https://uat.gamma.destinationxl.com"/>
   <test thread-count="5" name="Test123(failed)">
     <classes>
-      <class name="test_Pages.Sign_In">
+      <class name="test_Pages.MyAccount.Saved_Addresses">
         <methods>
-          <include name="myAddress"/>
-          <include name="signin"/>
+          <include name="editAddress"/>
           <include name="launchSite"/>
-          <include name="myAccountLink"/>
+          <include name="signin"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- test_Pages.Sign_In -->
+      </class> <!-- test_Pages.MyAccount.Saved_Addresses -->
     </classes>
   </test> <!-- Test123(failed) -->
 </suite> <!-- Failed suite [Suite] -->
