@@ -37,5 +37,9 @@ public class Guest_Sign_Action {
 		guestSignIn.signInUser.click();
 	}
 	
+	public int add()
+	{
+		return 10;
+	}
 	
 }
