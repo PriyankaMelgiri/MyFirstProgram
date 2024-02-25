@@ -36,6 +36,12 @@ public class Guest_Sign_Action {
 	public void signInUser() {
 		guestSignIn.signInUser.click();
 	}
+
+	public int add()
+	{
+		guestSignIn.signInUser.click();
+		return 20;
+	}
 	
 	public int add()
 	{
