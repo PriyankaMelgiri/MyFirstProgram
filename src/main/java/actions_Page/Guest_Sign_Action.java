@@ -40,7 +40,7 @@ public class Guest_Sign_Action {
 	public int add()
 	{
 		guestSignIn.signInUser.click();
-		int 20;
+		return 20;
 	}
 	
 	
