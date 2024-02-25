@@ -35,7 +35,8 @@ public WebElement getmyProfileHeading()
 return myProfileHeading=dSetUp.getElement("//b[@label='My Profile']","xpath");
 }
 
-//Saved Addresses locators
+/******************************Saved Addresses locators*********************************/
+
 public WebElement getmyAddressLink()
 {
 return myAddressLink=dSetUp.getElement("//a[text()='Saved Addresses']", "xpath");
@@ -51,6 +52,34 @@ public List<WebElement> getAddressDetail(){
 }
 
 @FindBy (xpath="//a[text()='Edit']") public List<WebElement> editLinks;
+
+@FindBy (xpath="//div//mat-option//span") public List<WebElement> statesList;
+
+@FindBy (xpath="//div[contains(@class,'mat-select-trigger')]//span") public WebElement selectedState;
+
+@FindBy (xpath="//button[text()='UPDATE']") public WebElement updateAddressButton;
+
+@FindBy (xpath="//button[text()='ADD ADDRESS']") public WebElement addAddressButtonToFillAddressForm;
+
+@FindBy (name="firstName") public WebElement fNameField;
+
+@FindBy (name="lastName") public WebElement lNameField;
+
+@FindBy (name="address1") public WebElement address1Field;
+
+@FindBy (xpath="//div[contains(@class,'mat-autocomplete-panel')]//mat-option//span") public List<WebElement> addressSuggestionList;
+
+@FindBy (name="city") public WebElement cityField;
+
+@FindBy (xpath="//mat-select[@role='combobox']") public WebElement stateDropDown;
+
+@FindBy (xpath="//div[@role='listbox']//mat-option") public List<WebElement> listOfState;
+
+@FindBy (name="postalCode") public WebElement zipCodeField;
+
+@FindBy (id="phoneNumber") public WebElement phoneNumberField;
+
+@FindBy (xpath="//div[@id='addressComponentRoot']//button[text()='ADD ADDRESS']") public WebElement addAddressButtonToAddAddress;
 
 }
 

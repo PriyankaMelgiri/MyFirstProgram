@@ -8,7 +8,8 @@
   <test thread-count="5" name="Test123">
   <classes>
 			<class name="DXL.UAT.BaseClass" />
-			<class name="test_Pages.Sign_In"></class>
+			<class name="test_Pages.MyAccount.Sign_In"></class>
+			<class name="test_Pages.MyAccount.Saved_Addresses"></class>
 		</classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

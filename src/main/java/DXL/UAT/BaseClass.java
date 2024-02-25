@@ -75,10 +75,10 @@ public class BaseClass {
 		String title=driver.getTitle();
 		Assert.assertEquals(title, "DXL - Shop for Big & Tall Men's Clothing & Accessories");
 	}
-//	@AfterClass
-//	public void tearDown() {
-//		driver.quit();
-//	}
+	@AfterClass
+	public void tearDown() {
+		driver.quit();
+	}
 	
 	public void click(WebElement element) {
 		wait.until(ExpectedConditions.visibilityOf(element));
