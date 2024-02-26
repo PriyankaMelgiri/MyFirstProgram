@@ -33,6 +33,10 @@ public class Saved_Addresses extends Sign_In {
 	@Test
 	public void deleteAddress() {
 		for(WebElement deleteLink:objRepo.myaccountLocator.deleteLinks) {
+			if(deleteLink==null){
+				
+			}
+			
 			click(deleteLink);
 			break;
 		}
