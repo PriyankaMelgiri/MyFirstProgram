@@ -30,4 +30,12 @@ public class Saved_Addresses extends Sign_In {
 		click(objRepo.myaccountLocator.updateAddressButton);
 	}
 	
+	@Test
+	public void deleteAddress() {
+		for(WebElement deleteLink:objRepo.myaccountLocator.deleteLinks) {
+			click(deleteLink);
+			break;
+		}
+	}
+	
 }

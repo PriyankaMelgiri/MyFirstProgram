@@ -81,5 +81,9 @@ public List<WebElement> getAddressDetail(){
 
 @FindBy (xpath="//div[@id='addressComponentRoot']//button[text()='ADD ADDRESS']") public WebElement addAddressButtonToAddAddress;
 
+@FindBy (xpath="//a[text()='Set as Default']") public List<WebElement> setAsDefaultLinks;
+
+@FindBy(xpath="//a[text()='Delete']") public List<WebElement> deleteLinks;
+
 }
 
