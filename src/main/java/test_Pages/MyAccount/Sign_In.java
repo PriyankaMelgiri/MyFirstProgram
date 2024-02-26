@@ -34,5 +34,6 @@ public class Sign_In extends BaseClass{
 		click(objRepo.guestSignInLocator.myAccountLink);	
     	WebElement myProfileHeading=objRepo.myaccountLocator.getmyProfileHeading();
     	Assert.assertEquals(myProfileHeading.getText(), "My Profile");
+    	System.out.println("hi");
 	}
 }
